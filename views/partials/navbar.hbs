@@ -1,0 +1,27 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo" style="margin-left: 15px;">CherryTeam</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+            <li class="active"><a href="/">Pagrindinis</a></li>
+        {{else}}
+            <li><a href="/">Pagrindinis</a></li>
+        {{/if}}
+        {{#if islist}}
+            <li class="active"><a href="/list">Sąrašas</a></li>
+        {{else}}
+            <li><a href="/list">Sąrašas</a></li>
+        {{/if}}
+        {{#if isGalery}}
+            <li class="active"><a href="/galery">Galerija</a></li>
+        {{else}}
+            <li><a href="/galery">Galerija</a></li>
+        {{/if}}
+        {{#if isMiddleware}}
+            <li class="active"><a href="/middleware">Middleware</a></li>
+        {{else}}
+            <li><a href="/middleware">Middleware</a></li>
+        {{/if}}
+        </ul>
+    </div>
+</nav>

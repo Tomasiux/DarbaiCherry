@@ -1,0 +1,16 @@
+<div class="container text-center" style="margin-top: 2rem;">
+    <div class="row row-cols-12" style="">
+{{#if imageList.length}}
+    {{#each imageList}}
+<div class="col">
+   <button>
+        <img src="{{file}}" class="img-fluid" style="max-height: 150px;">
+        </button>
+        <p class="text-sm">Patalpino: {{name}}</p>
+        <p class="text-sm" style="padding-bottom: 15px">Įkelta: 2022-10-14</p>
+        </div>
+    {{/each}}
+{{/if}}
+</div>
+<script>
+</script>

@@ -1,0 +1,8 @@
+<div class="container">
+    {{#if list.length}}
+        <small># {{list.length}}</small>
+        {{#each list}}
+            <div><a href="/remove/{{name}}">{{name}}</a></div>
+        {{/each}}
+    {{/if}}
+</div>
